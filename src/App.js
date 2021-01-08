@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import { connect } from 'react-redux';
 
 
 import Search from './components/Search';
@@ -18,7 +17,4 @@ const App =()=> {
   );
 }
 
-const mapStateToProps = (state)=>{
-}
-
-export default connect(mapStateToProps)(App);
+export default App;

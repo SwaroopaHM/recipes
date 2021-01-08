@@ -18,7 +18,7 @@
   border-radius: .25rem;
 }
 
-.search-button {
+.search-button-active {
   border: 1px solid #ced4da;
   border-radius: .25rem;
   padding: .5rem .75rem;
@@ -30,7 +30,7 @@
 
 .column {
   float: left;
-  width: 100%;
+  width: 60%;
 }
 
 .row:after {
@@ -40,9 +40,9 @@
 }
 
 .recipe-item{
+  top:10px;
   position: relative;
   display: block;
-  width: 100%;
   height: auto;
   padding: .375rem .75rem;
   margin: 0.5rem 0.5rem 1.5rem 0rem;
@@ -52,4 +52,14 @@
   color: #495057;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+}
+
+.search-button-inactive {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .5rem .75rem;
+  background-color: #6a7c8f;
+  margin: 10px 0px;
+  color: #fff;
+  float: right;
 }

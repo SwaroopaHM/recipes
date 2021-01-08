@@ -16,10 +16,10 @@ const useRecipe = (defaultSearchTerm) => {
         type: 'LATEST_DATA',
         payload: data
       })
-  
       setRecipes({recipes: response.data.hits, searchData: data});
     }).catch(error=>{
       console.log(error)
+      alert(error)
     });
     };
   return [recipes, search];

@@ -1,12 +1,14 @@
 import React from 'react';
+import LatestSearchDetails from './latestSearchDetails';
 
 const Recipe = ({ recipes }) => {
     return (
 
         <div style={{ position: 'relative', width: '90%', padding: '12px 50px' }}>
             <div class="row">
+            <div style={{float: 'left', width: '60%'}}>
                 {recipes && recipes.map((item, index) => {
-                    return <div class="column recipe-item" key={index}>
+                    return <div class="recipe-item" key={index}>
                         <div style={{ display: 'flex' }}>
                             <img src={item.recipe.image} alt='recipe_image' height='150px' width='150px' />
 
@@ -23,6 +25,10 @@ const Recipe = ({ recipes }) => {
                         </div>
                     </div>
                 })}
+                </div>
+                <div class="recipe-item" style={{float: 'right', width: '30%'}}>
+                <LatestSearchDetails />
+                </div>
             </div>
         </div>)
 }
